@@ -1,0 +1,1069 @@
+:root {
+  --themeColor: #faf8eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: reck;
+  src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+  font-family: robo;
+  src: url(./fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: fig;
+  src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+@font-face {
+  font-family: mid;
+  src: url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #faf8eb;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+nav {
+  width: 95%;
+  background-color: #fffefa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.7rem;
+  position: fixed;
+  top: 4vh;
+  z-index: 10;
+}
+#discount {
+  background-color: #2a2857;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  justify-content: center;
+  display: flex;
+  font-family: robo;
+  padding: 0.6rem;
+}
+nav i {
+  font-size: 2rem;
+  font-weight: 200;
+}
+.navleft {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-family: reck;
+  width: 32%;
+}
+.navleft h5 {
+  font-weight: 300;
+  text-transform: capitalize;
+  display: none;
+}
+.navcenter {
+  width: 25%;
+  height: auto;
+  justify-content: center;
+}
+.navcenter img {
+  width: 100%;
+  object-fit: cover;
+}
+.navright {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+.navright h4 {
+  display: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 200;
+  font-family: robo;
+}
+.navright span {
+  font-size: 1rem;
+}
+
+#section1 {
+  width: 100%;
+  height: 85vh;
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 2.5rem 2.5rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  border-bottom: 0.1rem solid black;
+}
+#section1 h2 {
+  font-size: clamp(3rem, 4vw, 4rem);
+  color: white;
+  text-align: center;
+  font-family: reck;
+  font-weight: 300;
+}
+#section1 p {
+  font-size: clamp(1.1rem, 2.5vw, 1rem);
+  color: white;
+  font-family: fig;
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+}
+#section1 button {
+  background-color: #2a2857;
+  outline: none;
+  border: none;
+  padding: 0.8rem 5rem;
+  color: white;
+  font-size: clamp(1.1rem, 2.9vw, 1.1rem);
+  border-radius: 2vw;
+}
+#downarrow {
+  position: absolute;
+  right: 3%;
+  bottom: -4%;
+}
+#leftarrow {
+  position: absolute;
+  left: 5%;
+  bottom: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf8eb;
+  transform: translateY(-50%);
+  border: 0.1rem solid black;
+  opacity: 0.75;
+}
+#leftarrow i {
+  font-size: 3rem;
+  font-weight: 200;
+  opacity: 0.75;
+}
+
+#section2 {
+  height: 100%;
+  height: 35vh;
+  display: flex;
+  padding: 0rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+#section2 h3 {
+  font-family: reck;
+  font-size: clamp(2rem, 6vw, 4rem);
+  width: 90%;
+  text-align: center;
+  font-weight: 500;
+}
+#section2 div {
+  background-color: #daaeeb;
+  border: 0.2vw solid black;
+  font-size: clamp(1.9rem, 7vw, 2rem);
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.5rem 0.7rem;
+  font-family: mid;
+  border-radius: 0.4rem;
+  transform: rotate(-3deg);
+  overflow-x: auto;
+}
+
+#section3 {
+  min-width: 100%;
+  height: 70vh;
+  padding: 0.8rem 0.8rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+}
+#section3::-webkit-scrollbar {
+  display: none;
+}
+
+.product {
+  width: 80%;
+  height: 87%;
+  flex-shrink: 0;
+  flex-direction: column;
+  display: flex;
+  gap: 0.8rem;
+}
+.product:nth-child(2) .imgsection {
+  background-color: #ffd6a5;
+}
+.product:nth-child(3) .imgsection {
+  background-color: #b0e8c1;
+}
+.product:nth-child(4) .imgsection {
+  background-color: #c1e4f8;
+}
+.product:nth-child(5) .imgsection {
+  background-color: #c0ed91;
+}
+.product:nth-child(6) .imgsection {
+  background-color: #ffd6a5;
+}
+.product:nth-child(7) .imgsection {
+  background-color: #b0e8c1;
+}
+.imgsection {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.7rem;
+  padding-bottom: 2rem;
+  background-color: #c0ed91;
+  border: 0.1rem solid black;
+}
+.imgsection img {
+  height: 80%;
+  width: 90%;
+}
+.imgsection h2 {
+  background-color: var(--themeColor);
+  font-family: mid;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  left: 4%;
+  top: 3%;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+.imgsection p {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  display: flex;
+  gap: 0.4rem;
+  align-self: center;
+  font-size: clamp(0.8rem, 4vw, 1rem);
+}
+.imgsection button {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--themeColor);
+  font-size: clamp(0.8rem, 5vw, 1.2rem);
+  border: 0.1rem solid black;
+  position: absolute;
+  text-transform: capitalize;
+  bottom: 3%;
+  right: 4%;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.7rem;
+}
+.productdata {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+.productdata h2 {
+  font-family: reck;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  text-transform: capitalize;
+}
+.productdata p {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  width: 100%;
+}
+#disc {
+  color: #9e9b91;
+  font-weight: 300;
+}
+
+#section4 {
+  width: 100%;
+  min-height: 100vh;
+}
+#section4top {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: start;
+  padding-top: 2rem;
+  justify-content: center;
+  border-bottom: 0.1rem solid black;
+}
+#section4top button {
+  font-size: clamp(1rem, 6vw, 1.4rem);
+  font-family: fig;
+  padding: 0.6rem 0.8rem;
+  background-color: #2a2857;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  color: var(--themeColor);
+  transform: rotate(8deg);
+}
+#section4center {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5rem;
+  padding: 0.6rem 0.5rem;
+}
+#section4center div {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 1.8rem;
+  padding-top: 1.5rem;
+}
+#section4center h5 {
+  background-color: #ff8030;
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  border: 0.1rem solid black;
+  font-family: fig;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1.7rem, 8vw, 2rem);
+  border-radius: 0.3rem;
+  transform: rotate(-3deg);
+}
+
+#section4center p {
+  font-size: clamp(1.5rem, 8vw, 1.7rem);
+  line-height: 2.1rem;
+}
+#section4center input {
+  height: 22%;
+  width: 90%;
+  border-radius: 0.5rem;
+  font-size: clamp(1.1rem, 6vw, 1.4rem);
+  padding: 0.1rem 0.9rem;
+  background-color: var(--themeColor);
+  border: 0.1rem solid black;
+}
+#section4bottom {
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 2rem;
+}
+#section4bottom p {
+  text-transform: uppercase;
+  font-family: robo;
+  font-weight: 700;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+#section4bottom div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 85%;
+  padding-bottom: 1.5rem;
+}
+#section4bottom div h5 {
+  font-size: clamp(1.7rem, 6vw, 1.2rem);
+  background-color: #d9e9ff;
+  padding: 0.4rem 0.6rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  font-family: reck;
+  font-weight: 500;
+}
+
+#section5 {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900");
+}
+#section5 h2 {
+  background-color: #daaeeb;
+  font-size: clamp(1.8rem, 6vw, 1.9rem);
+  font-family: fig;
+  letter-spacing: 0.1rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid black;
+}
+#section5 h4 {
+  font-size: clamp(4rem, 9vw, 5.5rem);
+  color: white;
+  font-family: fig;
+  text-transform: uppercase;
+  text-align: center;
+}
+#dit {
+  color: white;
+  text-align: center;
+  font-family: reck;
+  width: 95%;
+  text-transform: capitalize;
+  font-size: clamp(1.5rem, 5vw, 1.2rem);
+}
+#section5bottomdiv {
+  display: flex;
+  height: 15%;
+  gap: 1rem;
+}
+.section5bottomcon {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.section5bottomcon div {
+  height: 45%;
+  width: 75%;
+  border-radius: 50%;
+  background-size: cover;
+}
+.section5bottomcon:nth-child(1) .miniimg {
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/Quality_without_pretense.svg?v=1773116402&width=146%22);
+}
+.section5bottomcon:nth-child(2) .miniimg {
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/care_for_ppl_1.svg?v=1773116330&width=180.0);
+}
+.section5bottomcon:nth-child(3) .miniimg {
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/transparent_sourcing.svg?v=1773116421&width=122);
+}
+.section5bottomcon p {
+  font-size: clamp(1rem, 4vw, 1, 3rem);
+  text-align: center;
+  color: white;
+}
+#section5 button {
+  font-size: clamp(1.5rem, 6vw, 1.7rem);
+  font-family: mid;
+  padding: 0.3rem 7.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  font-weight: 200;
+  border-radius: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .navcenter {
+    width: 13vw;
+    height: auto;
+    justify-content: center;
+  }
+  .navcenter img {
+    width: 100%;
+    object-fit: cover;
+  }
+  #section1 {
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0);
+    background-position: top center;
+    background-size: 120% 130%;
+    display: flex;
+    padding: 2rem 2.5rem;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    border-bottom: 0.1rem solid black;
+  }
+  #section1 h2 {
+    font-size: clamp(3rem, 6vw, 4rem);
+    color: white;
+    text-align: center;
+    font-family: reck;
+    font-weight: 300;
+  }
+  #section1 p {
+    font-size: clamp(1.1rem, 4vw, 1rem);
+    color: white;
+    font-family: fig;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+  }
+  #section1 button {
+    background-color: #2a2857;
+    outline: none;
+    border: none;
+    padding: 0.8rem 7rem;
+    color: white;
+    font-size: clamp(1.1rem, 2.9vw, 1.1rem);
+    border-radius: 1.5vw;
+  }
+  #leftarrow {
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf8eb;
+    transform: translateY(-50%);
+    border: 0.1rem solid black;
+    opacity: 0.75;
+  }
+  #leftarrow i {
+    font-size: 4rem;
+    font-weight: 200;
+    opacity: 0.75;
+  }
+  #section2 {
+    gap: 7rem;
+  }
+  #section2 h3 {
+    font-family: reck;
+    font-size: clamp(2rem, 6vw, 4rem);
+    width: 70%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  #section2 div {
+    background-color: #daaeeb;
+    border: 0.2vw solid black;
+    font-size: clamp(2.3rem, 8vw, 2rem);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    font-family: mid;
+    border-radius: 0.7rem;
+    transform: rotate(-3deg);
+  }
+
+  .product {
+    width: 50%;
+    height: 80%;
+    flex-shrink: 0;
+    flex-direction: column;
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  #section4top button {
+    font-size: clamp(1.8rem, 10vw, 1.9rem);
+    font-family: fig;
+    padding: 0.8rem 1rem;
+    background-color: #2a2857;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    color: var(--themeColor);
+    transform: rotate(8deg);
+  }
+  #section4center {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 0.6rem 4rem;
+  }
+  #section4center div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1.8rem;
+    padding-top: 1.5rem;
+  }
+  #section4center h5 {
+    background-color: #ff8030;
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    border: 0.1rem solid black;
+    font-family: fig;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(1.7rem, 8vw, 2rem);
+    border-radius: 0.3rem;
+    transform: rotate(-3deg);
+  }
+
+  #section4center p {
+    font-size: clamp(2rem, 10vw, 2.2rem);
+    line-height: 2.1rem;
+  }
+  #section4center input {
+    height: 27%;
+    width: 90%;
+    border-radius: 0.5rem;
+    font-size: clamp(1.1rem, 6vw, 1.4rem);
+    padding: 0.1rem 0.9rem;
+    background-color: var(--themeColor);
+    border: 0.1rem solid black;
+  }
+
+  #section4bottom {
+    padding: 0rem 4rem;
+  }
+  #section4bottom div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 93%;
+  }
+  #section4bottom div h5 {
+    font-size: clamp(2rem, 8vw, 2.2rem);
+    background-color: #d9e9ff;
+    padding: 0.4rem 0.6rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    font-family: reck;
+    font-weight: 500;
+  }
+
+  #section5 {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900");
+  }
+  #section5 h2 {
+    background-color: #daaeeb;
+    font-size: clamp(1.8rem, 6vw, 1.9rem);
+    font-family: fig;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.4rem;
+  }
+  #section5 h4 {
+    font-size: clamp(4rem, 9vw, 5.5rem);
+    color: white;
+    font-family: fig;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+  }
+  #dit {
+    color: white;
+    text-align: center;
+    font-family: reck;
+    width: 65%;
+    text-transform: capitalize;
+    font-size: clamp(2rem, 6vw, 1.2rem);
+  }
+  #section5bottomdiv {
+    display: flex;
+    height: 20%;
+    gap: 1rem;
+  }
+  .section5bottomcon div {
+    height: 60%;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .section5bottomcon p {
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
+    text-align: center;
+    color: white;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav i {
+    font-size: 2rem;
+    font-weight: 200;
+    display: none;
+  }
+
+  .navleft h5 {
+    font-weight: 300;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .navcenter {
+    width: 8vw;
+    height: auto;
+    justify-content: center;
+  }
+  .navcenter img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .navright {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    width: 35%;
+  }
+  .navright h4 {
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: robo;
+  }
+  .navright h4::after {
+    content: "";
+    width: 0%;
+    height: 0.2vh;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    transition: all ease 0.6s;
+  }
+  .navright h4:hover::after {
+    width: 100%;
+  }
+  #section1 {
+    width: 100%;
+    height: 92vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=3600.0);
+    background-position: center;
+    background-size: 130% 120%;
+    display: flex;
+    padding: 2.2rem 2.2rem;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 1.1rem;
+    border-bottom: 0.1rem solid black;
+  }
+  #section1 h2 {
+    font-size: clamp(3rem, 4vw, 4rem);
+    color: white;
+    font-family: reck;
+    font-weight: 300;
+    width: 30%;
+    text-align: start;
+  }
+
+  #section1 p {
+    font-size: clamp(1.1rem, 2.5vw, 1rem);
+    color: white;
+    font-family: fig;
+    font-weight: 100;
+    width: 40%;
+    text-align: start;
+  }
+
+  #section1 button {
+    background-color: #2a2857;
+    outline: none;
+    border: none;
+    padding: 0.8rem 4rem;
+    color: white;
+    font-size: clamp(1.1rem, 2.9vw, 1.1rem);
+    border-radius: 2vw;
+  }
+
+  #section2 {
+    height: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 2rem 1.8rem 0rem 1.8rem;
+    justify-content: center;
+    gap: 12rem;
+  }
+  #section2 h3 {
+    font-family: reck;
+    font-size: clamp(3.5rem, 6vw, 3.5rem);
+    width: 55%;
+    text-align: center;
+    font-weight: 200;
+  }
+
+  #section2 div {
+    background-color: #daaeeb;
+    border: 0.2vw solid black;
+    font-size: clamp(3rem, 9vw, 3rem);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    font-family: mid;
+    border-radius: 0.7rem;
+    transform: rotate(-3deg);
+  }
+  #section3 {
+    min-width: 100%;
+    height: 85vh;
+    padding: 2rem 0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.5rem;
+  }
+  #section3::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product {
+    width: 22%;
+    height: 95%;
+    flex-shrink: 0;
+    flex-direction: column;
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .imgsection {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.7rem;
+    padding-bottom: 2rem;
+    background-color: #c0ed91;
+    border: 0.1rem solid black;
+  }
+  .imgsection img {
+    height: 80%;
+    width: 90%;
+  }
+  .imgsection h2 {
+    background-color: var(--themeColor);
+    font-family: mid;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 4%;
+    top: 3%;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+  }
+  .imgsection p {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    display: flex;
+    gap: 0.4rem;
+    align-self: center;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+  }
+  .imgsection button {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--themeColor);
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    border: 0.1rem solid black;
+    position: absolute;
+    text-transform: capitalize;
+    bottom: 3%;
+    right: 4%;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .productdata {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .productdata h2 {
+    font-family: reck;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 2vw, 1rem);
+    text-transform: capitalize;
+  }
+  .productdata p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    width: 100%;
+  }
+  #disc {
+    color: #9e9b91;
+    font-weight: 300;
+  }
+
+  #section4center {
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem 9rem;
+  }
+  #section4center div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1.8rem;
+    padding-top: 1.5rem;
+  }
+  #section4center h5 {
+    background-color: #ff8030;
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    border: 0.1rem solid black;
+    font-family: fig;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(2.2rem, 10vw, 2.3rem);
+    border-radius: 0.3rem;
+    transform: rotate(-3deg);
+  }
+
+  #section4center p {
+    font-size: clamp(3rem, 12vw, 3.2rem);
+    line-height: 3.3rem;
+    font-family: reck;
+  }
+  #section4center input {
+    height: 25%;
+    width: 50%;
+    border-radius: 0.5rem;
+    font-size: clamp(1.1rem, 6vw, 1.4rem);
+    padding: 0.1rem 0.9rem;
+    background-color: var(--themeColor);
+    border: 0.1rem solid black;
+  }
+  #section4top button {
+    font-size: clamp(2rem, 13vw, 2.5rem);
+    font-family: fig;
+    padding: 0.8rem 1rem;
+    background-color: #2a2857;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    color: var(--themeColor);
+    transform: rotate(8deg);
+  }
+  #section4bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 4rem;
+  }
+  #section4bottom p {
+    position: absolute;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    left: 11%;
+    top: 5%;
+  }
+  #section4bottom div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+    justify-self: center;
+  }
+  #section4bottom div h5 {
+    font-size: clamp(2rem, 6vw, 2.2rem);
+    background-color: #d9e9ff;
+    padding: 0.4rem 0.6rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    font-family: reck;
+    font-weight: 500;
+  }
+
+  #section5 {
+    width: 100%;
+    height: 220vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900");
+  }
+  #section5 h2 {
+    background-color: #daaeeb;
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    font-family: fig;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.4rem;
+  }
+  #section5 h4 {
+    font-size: clamp(4rem, 9vw, 5.5rem);
+    color: white;
+    font-family: fig;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+  }
+
+  #section5bottomdiv {
+    display: flex;
+    height: 20%;
+    gap: 1rem;
+  }
+  .section5bottomcon div {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .section5bottomcon p {
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
+    text-align: center;
+    color: white;
+    width: 80%;
+  }
+
+  #section5 button {
+    font-size: clamp(1.5rem, 6vw, 1.7rem);
+    font-family: mid;
+    padding: 0.3rem 5rem;
+    width: 60%;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    font-weight: 100;
+  }
+}
